@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<!-- 	change color every other line
+ -->	
+ <ul id="list">
+ 	<li>红豆</li>
+ 	<li>大红豆</li>
+ 	<li>芋头</li>
+ 	<li>香蕉</li>
+ 	<li>苹果</li>
+ 	<li>牛奶</li>
+ </ul>
+ <input type="button" value="click me" id="btn">
+ <script src="common.js"></script>
+ <script>
+ 		my$("btn").onclick=function(){
+ 			aObjs=my$("list").getElementsByTagName("li");
+ 			for(var i=0;i<aObjs.length;i++){
+ 				if(i%2==0){
+ 					aObjs[i].style.backgroundColor="orange";
+
+ 				}else{
+ 					aObjs[i].style.backgroundColor="pink";
+ 				}
+ 			}
+ 		}
+ </script>
+</body>
+</html>

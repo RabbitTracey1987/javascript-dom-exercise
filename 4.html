@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 点击超链接小图，变成大图 -->
+	<a href="images/1.jpg" id="a"><img src="images/1-small.jpg" alt=""></a>
+	<img src="" alt="" id="big">
+	<script src="common.js"></script>
+	<script>
+		my$("a").onclick=function(){
+			my$("big").src=my$("a").href;
+			return false;
+		}
+	</script>
+</body>
+</html>

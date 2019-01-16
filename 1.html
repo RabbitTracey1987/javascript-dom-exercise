@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- this is an example to click a button and diable a text input -->
+	<input type="button" value="diable" id="btn">
+	<input type="text" value="text" id="tx">
+	<script>
+		var btnObj=document.getElementById("btn");
+		btnObj.onclick=function(){
+
+			document.getElementById("tx").disabled=true;
+		};
+	</script>
+	
+</body>
+</html>
