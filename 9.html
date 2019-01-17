@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="click me" id="btn">
+	<input type="text" value="haha" name="name">
+	<input type="text" value="haha" name="name1">
+	<input type="text" value="haha" name="name1">
+	<input type="text" value="haha" name="name">
+	<input type="text" value="haha" name="name1">
+	<input type="text" value="haha" name="name">
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			var objs=document.getElementsByName("name1");
+			for(var i=0;i<objs.length;i++){
+				objs[i].value="lolo";
+			}
+		}
+	</script>
+	
+</body>
+</html>

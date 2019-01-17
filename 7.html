@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 鼠标移入就变色，移出就回复 -->
+	<ul>
+		<li>小猫猫</li>
+		<li>躲猫猫</li>
+		<li>大猫猫</li>
+		<li>乖猫猫</li>
+		<li>凶猫猫</li>
+	</ul>
+	<script src="common.js"></script>
+	<script>
+		var list=document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].onmouseover=function(){
+				this.style.backgroundColor="orange";
+			}
+			list[i].onmouseout=function(){
+				this.style.backgroundColor="";
+			}
+		}
+	</script>
+	
+</body>
+</html>

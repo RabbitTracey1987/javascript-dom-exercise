@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#id{
+			color:"grey";
+		}
+	</style>
+</head>
+<body>
+	<input type="text" value="please input" id="txt">
+	<script src="common.js"></script>
+	<script>
+		my$("txt").onfocus=function(){
+    	if(this.value=="please input"){
+    		this.value="";
+    		this.style.color="black";
+    	}
+		};
+		my$("txt").onblur=function(){
+			if(this.value.length==0){
+				this.value="please input";
+				this.style.color="grey";
+			}
+
+		};
+	</script>
+</body>
+</html>
