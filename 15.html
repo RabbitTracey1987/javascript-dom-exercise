@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 200px;
+			height:300px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="remove attribute" id="btn">
+	<div id="dv" score="10"></div>
+	<!-- remove defined attribute -->
+	<script src="common.js"></script>
+	<script>
+		var obj=my$("btn");
+		obj.onclick=function(){
+			my$("dv").removeAttribute("score");
+		}
+	</script>
+</body>
+</html>

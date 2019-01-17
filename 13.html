@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="click me" id="btn">
+  <input type="text" value="haha" id="a">
+	<!-- 兼容代码 -->
+	<script src="common.js"></script>
+	<script>
+		function setInnerText(element,text){
+			if(typeof element.textContent == "undefined"){
+				element.innerText=text;
+			}else{
+				element.textContent=text;
+			}
+		}
+
+		function getInnerText(element){
+			if(typeof element.textContent == "undefined"){
+				return element.innerText;
+			}else{
+				return element.textContent;
+			}
+		}
+
+		// testing
+		my$("btn").onclick=function(){
+			console.log(my$("a").value);
+		}
+
+	</script>
+	
+</body>
+</html>

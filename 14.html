@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul{
+			list-style-type: none;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- 点谁出谁的价格的效果 -->
+	<ul id="uu">
+		<li price="10">apple</li>
+		<li price="40">pineapple</li>
+		<li price="30">orange</li>
+		<li price="10">banana</li>
+		<li price="50">kiwi</li>
+	</ul>
+	<script src="common.js"></script>
+	<script>
+		var objs=document.getElementsByTagName("li");
+		for(var i=0;i<objs.length;i++){
+			objs[i].setAttribute("price",(i+1)*10);
+			objs[i].onclick=function(){
+				alert(this.getAttribute("price"));
+			};
+		}
+
+	</script>
+	
+</body>
+</html>
