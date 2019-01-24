@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 点击按钮，添加一个列表 -->
+	
+	<input type="button" value="click" id="btn">
+	<script src="common.js"></script>
+	<div id="dv"></div>
+	<script>
+		var list=["apple","pear","banana"];
+		my$("btn").onclick=function(){
+			str="<ul>"
+			for(var i=0;i<list.length;i++){
+				str+="<li>"+list[i]+"</li>"
+			}
+			str+="</ul>"
+   		my$("dv").innerHTML=str;
+		};
+	</script>
+	
+</body>
+</html>

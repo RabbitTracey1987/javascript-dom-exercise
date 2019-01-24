@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 第二种创建元素的方式 div.innerHtml= -->
+	<input type="button" value="click" id="btn">
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			my$("dv").innerHTML="<p>Unhappy Sunday Night</p>";
+		};
+	</script>
+	
+</body>
+</html>

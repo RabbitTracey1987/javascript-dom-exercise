@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="dv">
+		<span>this is a span</span>
+		<p>this is a p</p>
+		<ul id="uu">
+			<li>coco</li>
+			<li>lulu</li>
+			<li>feifei</li>
+			<li id="three">jiji</li>
+			<li>aiai</li>
+			<li>shishi</li>
+		</ul>
+	</div>
+	<script src="common.js"></script>
+	<script>
+		var dvObj=document.getElementById("dv");
+		console.log(dvObj.childNodes);
+		console.log(dvObj.children);
+		for(var i=0;i<dvObj.childNodes.length;i++){
+			var node=dvObj.childNodes[i];
+			console.log(node.nodeType);
+			console.log(node.nodeName);
+			console.log(node.nodeValue);
+		}
+
+
+		
+	</script>
+	
+</body>
+</html>

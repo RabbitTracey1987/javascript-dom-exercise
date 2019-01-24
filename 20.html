@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 点击按钮，所有的p标签变色 -->
+	<input type="button" value="click me to change color of p" id="btn">
+	<div id="dv">
+		<span>span1</span>
+		<span>span2</span>
+		<p>p1</p>
+		<span>span3</span>
+		<span>span4</span>
+		<p>p2</p>
+	</div>
+	<script src="common.js"></script>
+	<script>
+		my$('btn').onclick=function(){
+			childObjs=my$("dv").childNodes;
+			for(var i=0;i<childObjs.length;i++){
+				if(childObjs[i].nodeType==1 && childObjs[i].nodeName=="P"){
+					childObjs[i].style.backgroundColor="orange";
+				}
+			}
+		}
+	</script>
+	
+</body>
+</html>

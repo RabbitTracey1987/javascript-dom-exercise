@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div id="dv"></div>
+	<input type="button" value="click" id="btn">
+	<script src="common.js"></script>
+	<script>
+		var Obj=[1,2,3,4,5];
+		my$("btn").onclick=function(){
+			var ul=document.createElement("ul");
+			my$("dv").appendChild(ul);
+			for(var i=0;i<Obj.length;i++){
+				var li=document.createElement("li");
+				li.innerText=Obj[i];
+				ul.appendChild(li);
+			}
+		}
+
+
+
+		
+	</script>
+	
+</body>
+</html>

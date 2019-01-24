@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="dv">
+		<span>this is a span</span>
+		<p>this is a p</p>
+		<ul id="uu">
+			<li>coco</li>
+			<li>lulu</li>
+			<li>feifei</li>
+			<li id="three">jiji</li>
+			<li>aiai</li>
+			<li>shishi</li>
+		</ul>
+	</div>
+	<script src="common.js"></script>
+	<script>
+		// 12行代码，都是获取节点的
+
+		//div
+		var dvobj=document.getElementById("dv");
+
+		//ul
+    var ulobj=document.getElementById("uu");
+    //父级节点
+    console.log(ulobj.parentNode);
+    //父元素
+    console.log(ulobj.parentElement);
+    //子节点
+    console.log(ulobj.childNode);
+    //子元素
+    console.log(ulobj.children);
+    //第一个子节点
+    console.log(ulobj.firstChild);
+    //第一个子元素
+    console.log(ulobj.firstElementChild);
+    //某元素的前一个兄弟节点
+    console.log(my$("three").previousSibling);
+    //某元素的前一个兄弟元素
+    console.log(my$("three").previousElementSibling);
+     //某元素的后一个兄弟节点
+    console.log(my$("three").nextSibling);
+    //某元素的后一个兄弟元素
+    console.log(my$("three").nextElementSibling);
+		
+	</script>
+	
+</body>
+</html>

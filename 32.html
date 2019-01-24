@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="click to add" id="btn">
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			if(!my$("obj")){
+				var Obj=document.createElement("input");
+				Obj.value="click me";
+				Obj.type="button";
+				Obj.id="obj"
+				my$("dv").insertBefore(Obj,my$("dv").firstElementChild);
+		  }
+		}
+		
+		
+	</script>
+	
+</body>
+</html>

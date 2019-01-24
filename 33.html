@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 为同一个元素绑定多个事件 -->
+	<input type="button" value="click" id="btn">
+	<script src="common.js"></script>
+	<script>
+		my$("btn").addEventListener("click",function(){
+			console.log("haha");
+		},false);
+		my$("btn").addEventListener("click",function(){
+			console.log("hehe");
+		},false);
+		my$("btn").addEventListener("click",function(){
+			console.log("xixixi");
+		},false);
+	</script>
+	
+</body>
+</html>

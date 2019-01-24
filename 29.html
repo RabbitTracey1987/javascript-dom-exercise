@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="click" id="btn">
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			var Obj=document.createElement("p");
+			Obj.innerText="This is a p";
+			my$("dv").appendChild(Obj);
+
+		}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="click to add" id="btn">
+	<input type="button" value="click to remove" id="btn1">
+	<input type="button" value="remove all elements" id="btn2">
+
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			var Obj=document.createElement("input");
+			Obj.value="click me";
+			Obj.type="button";
+			my$("dv").insertBefore(Obj,my$("dv").firstElementChild);
+		}
+		my$("btn1").onclick=function(){
+			my$("dv").removeChild(my$("dv").firstElementChild);
+		}
+		my$("btn2").onclick=function(){
+			while(my$("dv").firstElementChild){
+				my$("dv").removeChild(my$("dv").firstElementChild);
+			}	
+		}
+		
+	</script>
+	
+</body>
+</html>
